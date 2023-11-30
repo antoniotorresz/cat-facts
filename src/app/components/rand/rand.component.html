@@ -1,0 +1,12 @@
+<div id="main-container" style="background: #{{ random_colors[0] }};">
+    <h1>Random cat: <span [innerHTML]="emoji"></span></h1>
+    <div id="content-container" style="background: #{{ random_colors[1] }};">
+        <div id="dog-image-container" style="background: #{{ random_colors[2] }};">
+            <img id="dog-image" src="{{cat_image}}">
+        </div>
+        <div id="cat-fact-container" style="background: #{{ random_colors[3] }};">
+            <h2>Now, this a fact about cats:</h2>
+            <p>{{cat_fact}}</p>
+        </div>
+    </div>
+</div>

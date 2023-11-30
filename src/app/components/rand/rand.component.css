@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-container {
+    text-align: center;
+    animation: wobble ease-in-out 3s;
+    /* Centrar el contenido del contenedor principal */
+}
+
+#content-container {
+    display: flex;
+    align-items: center;
+    /* Centrar verticalmente */
+}
+
+#dog-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dog-image {
+    max-width: 100%;
+    /* Ajustar la imagen para que no desborde su contenedor */
+}
+
+#cat-fact-container {
+    flex: 2;
+    padding: 2%;
+    /* Ajuste del padding para un mejor espacio alrededor del contenido */
+}
+
+#dog-image-container {
+    flex: 1;
+    max-width: 50%;
+    /* Evitar que el contenedor de la imagen sea demasiado ancho en pantallas grandes */
+}
+
+@media (max-width: 768px) {
+    #dog-image-container {
+        max-width: 100%;
+        /* Hacer que el contenedor de la imagen ocupe el 100% en pantallas más pequeñas */
+    }
+}
+
+@keyframes wobble {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform: rotate(-3deg); }
+    100% { transform: rotate(2deg); }
+  }
