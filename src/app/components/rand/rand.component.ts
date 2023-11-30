@@ -19,28 +19,8 @@ export class RandComponent {
   //2. https://meowfacts.herokuapp.com/
   //3. https://api.thecatapi.com/v1/images/search
 
-  private getRandomColors(numberOfColors: number) {
-    const apiUrl = 'https://www.colr.org/json/color/random';
-    for (let i = 0; i < numberOfColors; i++) {
-      this.http.get(apiUrl)
-        .subscribe(
-          (response: any) => {
-            const hex_color = response.colors[0].hex;
-            if (!this.random_colors.includes(hex_color)) {
-              this.random_colors.push(hex_color);
-              numberOfColors--;
-            }
-            if (numberOfColors > 0) {
-              this.getRandomColors(numberOfColors);
-            } else {
-              console.log('All colors obtained');
-            }
-          },
-          (error: any) => {
-            console.error('Colors could not being retreived');
-          }
-        );
-    }
+  reloadPage() {
+    window.location.reload();
   }
   ngOnInit() {
     this.http.get('https://meowfacts.herokuapp.com/')

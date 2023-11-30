@@ -8,7 +8,7 @@ import { Product } from './models/product.model';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular-first-client';
+  title = 'Cat facts';
   mi_name = "antonio";
   http = inject(HttpClient);
   //this from the youtube channel:
