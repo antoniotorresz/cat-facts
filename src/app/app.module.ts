@@ -8,7 +8,7 @@ import { ProductComponent } from './components/product/product.component';
 import { NgOptimizedImage } from '@angular/common';
 import { RandComponent } from './components/rand/rand.component';
 import { PostsCreateComponent } from './components/posts-create/posts-create.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,8 @@ import { PostsCreateComponent } from './components/posts-create/posts-create.com
     BrowserModule,
     AppRoutingModule,
     NgOptimizedImage,
-    HttpClientModule
+    HttpClientModule, 
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration()

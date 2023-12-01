@@ -12,7 +12,7 @@ export class RandComponent {
   cat_image = ''
   emoji = ''
   random_colors: string[] = [];
-  http = inject(HttpClient)
+  http = inject(HttpClient);
 
   //this is my own try, getting random information from different sources:
   //1. https://emojihub.yurace.pro/api/all
