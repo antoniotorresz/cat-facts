@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { ProductComponent } from './components/product/product.component';
 import { NgOptimizedImage } from '@angular/common';
 import { RandComponent } from './components/rand/rand.component';
+import { PostsCreateComponent } from './components/posts-create/posts-create.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
-    RandComponent
+    RandComponent,
+    PostsCreateComponent
   ],
   imports: [
     BrowserModule,

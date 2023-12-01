@@ -1,0 +1,33 @@
+<div class="card">
+    <div class="card-header">
+      <div class="card-header-title">
+        <h1 class="title">Create a new post</h1>
+      </div>
+    </div>
+    <form [formGroup]="miFormulario" (ngSubmit)="enviarDatos()">
+      <div class="card-content">
+        <div class="field">
+          <label class="label">Title</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Enter the title of the post" formControlName="title">
+          </div>
+          <p class="help" *ngIf="miFormulario.get('title').hasError('required')">This field is required</p>
+        </div>
+        <div class="field">
+          <label class="label">Body</label>
+          <div class="control">
+            <textarea class="textarea" placeholder="Enter all the content of your post" formControlName="body"></textarea>
+          </div>
+          <p class="help" *ngIf="miFormulario.get('body').hasError('required')">This field is required</p>
+        </div>
+      </div>
+      <footer class="card-footer">
+        <div class="card-footer-item is-pulled-right">
+          <button class="button is-warning" type="reset">Clear input</button>
+          <span style="margin-right: 10px;"></span>
+          <button class="button is-success" type="submit" [disabled]="miFormulario.invalid">Send Post</button>
+        </div>
+      </footer>
+    </form>
+  </div>
+  

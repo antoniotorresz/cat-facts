@@ -1,6 +1,6 @@
 <div id="main-container" style="background: #{{ random_colors[0] }};">
     <h1>Random cat: <span [innerHTML]="emoji"></span></h1>
-    <audio controls autoplay loop>
+    <audio controls loop>
         <source src="../../../assets/sound.mp3" type="audio/mp3">
         Tu navegador no soporta el elemento de audio.
       </audio>
@@ -14,4 +14,4 @@
             <button (click)="reloadPage()">I want to see other cat</button>
         </div>
     </div>
-</div>
+</div>  
