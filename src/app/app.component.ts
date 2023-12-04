@@ -28,5 +28,6 @@ export class AppComponent {
     // .subscribe((data: any) => {
     //   this.products = data;
     // });
+
   }
 }

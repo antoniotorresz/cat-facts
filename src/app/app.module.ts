@@ -9,13 +9,15 @@ import { NgOptimizedImage } from '@angular/common';
 import { RandComponent } from './components/rand/rand.component';
 import { PostsCreateComponent } from './components/posts-create/posts-create.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PostsGetComponent } from './components/posts-get/posts-get.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
     RandComponent,
-    PostsCreateComponent
+    PostsCreateComponent,
+    PostsGetComponent
   ],
   imports: [
     BrowserModule,

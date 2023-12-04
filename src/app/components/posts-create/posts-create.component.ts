@@ -16,11 +16,8 @@ export class PostsCreateComponent implements OnInit {
   http = inject(HttpClient);
 
   enviarDatos() {
-    console.log(this.miFormulario.value);
     if (this.miFormulario.valid) {
       const formData = this.miFormulario.value;
-      console.log();
-
       this.http.post('https://jsonplaceholder.typicode.com/posts', formData)
         .subscribe((response: any) => {
           alert("Post creado. HTTP STATUS: " + response.status + '\n' + response);

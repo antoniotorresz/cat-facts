@@ -8,9 +8,9 @@ import { HttpClient } from '@angular/common/http';
   styleUrl: './rand.component.css'
 })
 export class RandComponent {
-  cat_fact = ''
-  cat_image = ''
-  emoji = ''
+  cat_fact = '';
+  cat_image = '';
+  emoji = '';
   random_colors: string[] = [];
   http = inject(HttpClient);
 
